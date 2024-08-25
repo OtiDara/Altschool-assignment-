@@ -1,0 +1,112 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    background-color:rgba(250, 242, 231, 0.84);
+    width: 99%;
+    padding: 5px;
+    
+}
+.box{
+ display: flex;
+ gap: 40px;
+ padding: 0px 20px 30px 40px;
+ width: 96%;
+
+}
+.left-section img{
+    width: 400px;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+}
+.left-section{
+    position: relative;
+    display: inline-block;
+    padding-top: 80px;
+    
+}
+ .left-section::before,
+ .left-section::after{
+    content: "";
+    width: 2px;
+    background-color:gray;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+.left-section::before{
+    top: 0;
+    height: 80px;
+
+}
+.left-section::after{
+    bottom: 0;
+    height: 369px;
+}
+.move{
+    display: flex;
+    justify-content: end;
+
+}
+.move a{
+    padding: 0px 10px 0px 40px;
+    text-decoration: none;
+    font-size: 20px;
+}
+.right-section{
+    flex:2 ;
+}
+
+.right-section h1{
+    font-family: cursive;
+    font-size: 40px;
+    font-weight: bolder;
+}
+.right-section h2{
+    font-family: fantasy;
+    font-weight: 900;
+    font-size: 30px;
+}
+.right-section p{
+    font-family: 'Courier New', Courier, monospace; 
+}
+@media (max-width: 1024px){
+   .left-section img{
+     width: 380px;
+     height: auto;
+     border-radius: 50%;
+   }
+   .right-section{
+     font-size:12px ;
+   }
+   .left-section::after{
+     height: 335px;
+   }
+}
+
+
+@media (max-width:768px){
+    .left-section img{
+        width: 300px;
+        border-radius: 20px;
+        
+    }
+    
+    .left-section::before,
+    .left-section::after{
+        content: none;
+        display: none;
+    }
+    .box{
+        flex-direction: column;
+        
+    }
+}

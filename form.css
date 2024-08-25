@@ -1,0 +1,269 @@
+body{
+    margin: 0;
+    box-sizing: border-box;
+
+}
+#container {
+    width: 98%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    padding-bottom: 20px;
+} 
+
+.box{
+    display: flex;
+
+}
+.left-side {
+    height: 100vh;
+   top: 0px;
+   bottom: 0;
+   left: 0;
+   padding:80px;
+   background-color: rgb(255, 252, 248);
+  flex: 1;
+}
+.left-side img {
+    width: 450px;
+}
+.left-side h1 {
+    font-size: 3.1em;
+    font-weight: bold;
+    line-height: 1.50em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.socials {
+    display:flex ;
+    justify-content: center;
+    gap: 12px;
+}
+.socials img {
+    width: 20px;
+    height: 18px;
+    
+}
+.footer-zoho {
+    display: flex;
+    flex-direction: column;
+     align-items: center;
+}
+.footer-zoho p {
+    font-size: 13px;
+    
+}
+.footer-zoho span {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+} 
+
+.form-section {
+    width: 100%;
+    display: flex;
+    margin-left: 50px;
+    margin-bottom: 100px;
+    scroll-behavior: smooth;
+    
+}
+.form-content {
+ padding: 20px;
+ margin-bottom: px;
+ width: 100%;
+ display: block;
+ flex: 1;
+ 
+}
+.form-content p {
+    display: flex;
+    justify-content: right;
+    color: #0f0f19;
+    margin-right: 16px;
+    margin-top: 0px;
+    font-weight: bolder;
+    font-size: 18px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.form-content .sign{
+    color: blue;
+    text-decoration: none;
+    padding-left: 6px;
+    color: #0367f2;
+}
+.form-content h2 {
+    font-size: 30px;
+    color: #0b1e4b;
+    margin-top: 80px;
+    margin-bottom: 0;
+}
+.form-content h4 {
+    color: #85888d;
+    font-weight: lighter;
+    font-size: 18px;
+    margin-top: 8px;
+    word-spacing: 3px;
+}
+.main-form{
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    width: 78%;
+}
+.form-group {
+    background-color: #fff;
+    border-radius: 5px;
+    
+}
+label{
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #0b1e4b;
+}
+ input[type="text"]{
+ padding: 22px 0px 22px 8px;
+ border: none;
+ border-radius: 5px;
+ box-sizing: border-box;
+  width: 100%;
+  background-color: #fafafa;
+  color: #fafafa;
+    
+}
+.full-width {
+    grid-column: span 2;
+}
+input[type="date"]{
+    padding: 22px 0px 22px 8px;
+    border: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+     width: 100%;
+     background-color: #fafafa;
+    
+}
+#gender{
+ padding: 22px 0px 22px 8px;
+ border-radius: 5px;
+ box-sizing: border-box;
+  width: 100%;
+  background-color:#fafafa;
+    border: none;
+}
+#Country{
+    padding: 22px 0px 22px 8px;
+    border: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+     width: 100%;
+     background-color: #fafafa;
+       
+}
+#about-us{
+ padding: 22px 0px 22px 8px;
+ border: none;
+ border-radius: 5px;
+ box-sizing: border-box;
+  width: 100%;
+    background-color: #fafafa;
+}
+input[type="password"]{
+    padding: 22px 0px 22px 8px;
+    border: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+     width: 100%;
+     background-color: #fafafa;
+}
+.Policy{
+   margin-top: 30px;
+   width: 78%;
+}
+.read-policy{
+    color: #0367f2;
+}
+button{
+    padding: 20px 260px 20px 260px;
+    
+    border-radius: 5px;
+    border: none;
+    background-image: url(image/smcolor.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    
+}
+button:hover{
+    background-image: url(image/butterfly.png);
+    box-shadow:0 4px 4px rgba(240, 108, 108, 0.4);
+}
+.nav-btn  a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    background-image: url(image/rlove.png);
+    padding: 15px 25px 15px 25px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.nav-btn1 a {
+ background-image: url(image/mcolor.png);
+  color: white;
+  padding: 15px;
+  text-decoration: none;
+  border-radius: 5px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-weight: bold;
+  
+}
+.school-logo{
+    width: 100%;
+    padding: 20px;
+    display: none;
+}
+.school-logo img{
+    width: 100px;
+}
+@media (max-width: 768px){
+    .left-side{
+        display: none;
+    }
+    .nav-btn{
+        display: none;
+    }
+    .nav-btn1{
+        display: none;
+    }
+    .form-section{
+        flex: 1;
+        width: 100%;
+    }
+    .school-logo{
+        display: flex;
+        padding: 0;
+        justify-content: center;
+    }
+    .form-content p{
+        display: flex;
+        justify-content: center;
+    }
+    .main-form{
+        width: 100%;
+    }
+    button{
+     padding: 20px 285px 20px 285px;;
+    }
+    .form-content{
+        margin: 0;
+        padding: 0;
+    }
+    
+    
+    
+}
