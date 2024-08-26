@@ -67,7 +67,6 @@ body{
 }
 .form-content {
  padding: 20px;
- margin-bottom: px;
  width: 100%;
  display: block;
  flex: 1;
@@ -106,7 +105,7 @@ body{
     display:grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
-    width: 78%;
+    width: 84%;
 }
 .form-group {
     background-color: #fff;
@@ -174,16 +173,18 @@ input[type="password"]{
      width: 100%;
      background-color: #fafafa;
 }
+.Policy h4{
+    font-size: 17.6px;
+}
 .Policy{
    margin-top: 30px;
-   width: 78%;
+   
 }
 .read-policy{
     color: #0367f2;
 }
 button{
-    padding: 20px 260px 20px 260px;
-    
+    padding: 20px 221px 20px 221px;
     border-radius: 5px;
     border: none;
     background-image: url(image/smcolor.png);
@@ -257,13 +258,23 @@ button:hover{
         width: 100%;
     }
     button{
-     padding: 20px 285px 20px 285px;;
+     padding: 20px 240px 20px 240px;
+     font-size: 15px;
     }
     .form-content{
         margin: 0;
         padding: 0;
     }
-    
-    
-    
+    .Policy h4{
+        font-size: 17px;
+    }
+    .Policy{
+      width: 100%;
+    }
+}
+@media (max-width: 480px){
+    button{
+        padding: 20px 180px 20px 180px;
+        font-size: 12px;
+    }
 }
