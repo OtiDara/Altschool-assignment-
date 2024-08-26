@@ -128,7 +128,10 @@ body{
     }
     .right-section h2{
         font-weight: 700px;
-        color: blueviolet;
-        font-size: 26px;
+        font-size: 22px;
+        font-family: cursive;
+    }
+    #biography{
+        font-family: fantasy;
     }
 }
